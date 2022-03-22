@@ -27,7 +27,7 @@ jobs:
       run: pip install wheel setuptools numpy
 
     - name: Build wheel
-      run: cd PythonAPI && python setup.py bdist_wheel
+      run: cd PythonAPI && python setup.py build_ext --inplace
 
     - name: Install software
       run: pip install --find-links=${{github.workspace}}/dist/ cocoapi
