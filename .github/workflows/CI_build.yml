@@ -30,7 +30,7 @@ jobs:
       run: cd PythonAPI && python setup.py build_ext --inplace
 
     - name: Install software
-      run: pip install --find-links=${{github.workspace}}/dist/ cocoapi
+      run: pip install --find-links=${{github.workspace}}/dist/ pycocotools
 
     - name: Test import
       run: python -c "import pycocotools"
