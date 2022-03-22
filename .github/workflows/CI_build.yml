@@ -30,7 +30,7 @@ jobs:
       run: cd PythonAPI && python setup.py bdist_wheel
 
     - name: Install software
-      run: pip install --find-links=${{github.workspace}}/dist/ pycocotools
+      run: pip install --find-links=${{github.workspace}}/PythonAPI/dist/ pycocotools
 
     - name: Test import
       run: python -c "import pycocotools"
