@@ -1,4 +1,4 @@
- name: Build and upload wheels
+name: Build and upload wheels
 
 on:
   push:
