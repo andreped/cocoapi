@@ -24,7 +24,7 @@ jobs:
         python-version: ${{ matrix.python-version }}
 
     - name: Install dependencies
-      run: pip install wheel setuptools numpy
+      run: pip install wheel setuptools numpy cython
 
     - name: Build wheel
       run: cd PythonAPI && python setup.py build_ext --inplace
